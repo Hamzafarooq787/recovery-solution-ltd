@@ -114,7 +114,7 @@ export default function Home() {
       </div>
     </div>
   </header>
-</main>
+
 
       <section id="services" className="section bg-surface-muted">
         <div className="container-page">
