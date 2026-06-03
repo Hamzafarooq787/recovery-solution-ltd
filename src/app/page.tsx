@@ -116,7 +116,6 @@ export default function Home() {
   </header>
 </main>
 
-      {/* ---------- SERVICES ---------- */}
       <section id="services" className="section bg-surface-muted">
         <div className="container-page">
           <div className="section-head">
@@ -148,7 +147,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- WHY CHOOSE US ---------- */}
       <section id="why-choose-us" className="section bg-primary text-white relative overflow-hidden">
         <div
           aria-hidden
@@ -199,7 +197,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- SERVICE AREAS ---------- */}
       <section id="contact" className="section bg-surface-muted">
         <div className="container-page">
           <div className="rounded-3xl bg-white border border-border shadow-[0_30px_60px_-30px_rgba(15,23,42,0.18)] p-6 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -234,7 +231,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- FINAL CTA ---------- */}
       <section className="section bg-gradient-to-br from-primary to-primary-light text-white text-center">
         <div className="container-page max-w-3xl">
           <span className="eyebrow text-accent-light"><span className="w-8 h-px bg-accent-light" /> Stranded right now?</span>
