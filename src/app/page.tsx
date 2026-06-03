@@ -59,11 +59,11 @@ export default function Home() {
       {/* ---------- HERO ---------- */}
       <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <img
-            alt="Professional recovery truck assisting a vehicle in London"
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGVLkGCcceNsz72dRWtwRTrONJv2Z_KZjnUcd733Y1fQOZrxsAuq7aF8juTd7x17RT8bivjt4ge88z-kXx5JorIuIfNHJyQGf1q_RnAqCotRHdgCTBcM7SnozLMfaphfqKY_bsjV4uPEc2rMdnDvm5cNrFMFLBqnt_C2wmMGmN5E8i67IgN-gxm1gMmVqho8X-6cK8lRCtXJj1vccXaDSTwmR6Cj0t8DtYSLwkRpEcklipHG2DrycMenIVZRS8aBwyb7EGOrwVmhIJ"
-          />
+         <img
+  alt="Professional recovery truck assisting a vehicle in London"
+  className="w-full h-full object-cover"
+  src="/hero.png"
+/>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
         </div>
 
