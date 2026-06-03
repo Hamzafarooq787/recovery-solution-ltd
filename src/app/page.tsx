@@ -53,59 +53,68 @@ const FEATURES = [
 
 export default function Home() {
   return (
-    <main className="bg-surface-muted">
-      <Navbar />
+   <main className="bg-surface-muted">
+  <Navbar />
 
-      {/* ---------- HERO ---------- */}
-      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
-<div className="absolute inset-0 -z-10">
-  <img
-    src="./hero.webp"
-    alt="Professional recovery truck assisting a vehicle in London"
-    className="w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
-</div>
+  {/* ---------- HERO ---------- */}
+  <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
+    <div className="absolute inset-0 -z-10">
+      <img
+        src="/hero.webp"
+        alt="Professional recovery truck assisting a vehicle in London"
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
+    </div>
 
-        <div className="container-page py-16 md:py-24 w-full">
-          <div className="max-w-3xl text-white animate-fadeIn">
-            <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
-              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-              Available 24/7 across London
-            </span>
-            <h1 className="mt-6 text-white">
-              Fast &amp; Reliable Vehicle Recovery Across&nbsp;London
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
-              24/7 vehicle recovery, breakdown assistance, roadside support, and
-              vehicle transportation. Professional help, exactly when you need it.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="tel:+447865459551" className="btn btn-accent urgent-pulse text-base">
-                <span className="material-symbols-outlined">call</span>
-                Call +44 7865 459551
-              </a>
-              <a href="/contact" className="btn btn-ghost-white text-base">
-                <span className="material-symbols-outlined">request_quote</span>
-                Get a Free Quote
-              </a>
-            </div>
+    <div className="container-page py-16 md:py-24 w-full">
+      <div className="max-w-3xl text-white animate-fadeIn">
+        <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+          <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+          Available 24/7 across London
+        </span>
 
-            <div className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
-              {[
-                { label: "Avg. response", value: "45 min" },
-                { label: "Recovered", value: "15k+" },
-                { label: "Rating", value: "4.9★" },
-              ].map((s) => (
-                <div key={s.label}>
-                  <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">{s.value}</div>
-                  <div className="text-xs uppercase tracking-wider text-white/60 mt-1">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <h1 className="mt-6 text-white">
+          Fast &amp; Reliable Vehicle Recovery Across&nbsp;London
+        </h1>
+
+        <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
+          24/7 vehicle recovery, breakdown assistance, roadside support, and
+          vehicle transportation. Professional help, exactly when you need it.
+        </p>
+
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="tel:+447865459551" className="btn btn-accent urgent-pulse text-base">
+            <span className="material-symbols-outlined">call</span>
+            Call +44 7865 459551
+          </a>
+
+          <a href="/contact" className="btn btn-ghost-white text-base">
+            <span className="material-symbols-outlined">request_quote</span>
+            Get a Free Quote
+          </a>
         </div>
-      </header>
+
+        <div className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
+          {[
+            { label: "Avg. response", value: "45 min" },
+            { label: "Recovered", value: "15k+" },
+            { label: "Rating", value: "4.9★" },
+          ].map((s) => (
+            <div key={s.label}>
+              <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">
+                {s.value}
+              </div>
+              <div className="text-xs uppercase tracking-wider text-white/60 mt-1">
+                {s.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </header>
+</main>
 
       {/* ---------- SERVICES ---------- */}
       <section id="services" className="section bg-surface-muted">
