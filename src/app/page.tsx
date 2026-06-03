@@ -53,14 +53,15 @@ const FEATURES = [
 
 export default function Home() {
   return (
-   <main className="bg-surface-muted">
+ <main className="bg-surface-muted">
   <Navbar />
 
   {/* ---------- HERO ---------- */}
   <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
     <div className="absolute inset-0 -z-10">
+      {/* ✅ Working image URL – isko apni real image se replace kar dena */}
       <img
-        src="/hero.webp"
+        src="https://picsum.photos/id/104/1920/1080"
         alt="Professional recovery truck assisting a vehicle in London"
         className="w-full h-full object-cover"
       />
@@ -114,6 +115,7 @@ export default function Home() {
       </div>
     </div>
   </header>
+
 
 
       <section id="services" className="section bg-surface-muted">
