@@ -40,14 +40,14 @@ export default function AboutPage() {
 
       {/* ---------- HERO ---------- */}
       <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            className="w-full h-full object-cover"
-            alt="A professional heavy-duty recovery truck on a clean urban street in London at dusk."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBpN60D-ArxyNWF3FSeCFDM85XG9Zlti1i2Jtfg6hAWpJtzV4ojY5UGOhSiOY0bOGJZJ1vQOIKB6GXs9b_UV3vidLr-nUrNoTTRdevO73VNNqLGBjRzhtzj0YfUv8z6XxSvKRmrvSMkWknHvbj8fBgj8op2-5EYSJ_a9SaTosuAVmFpegt62uIl0ELjMP8IEKgR8RrtbZIVqp4MUFIy59lnOJkw824yBRjK7AGcxspgNDkZBa2GWaa-pMxjwpFxsAg1bf7MTPcuMN"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
-        </div>
+     <div className="absolute inset-0 -z-10">
+  <img
+    className="w-full h-full object-cover"
+    alt="A professional heavy-duty recovery truck on a clean urban street in London at dusk."
+    src="/about.png"
+  />
+  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
+</div>
 
         <div className="container-page py-16 md:py-20 w-full">
           <div className="max-w-2xl text-white animate-fadeIn">
