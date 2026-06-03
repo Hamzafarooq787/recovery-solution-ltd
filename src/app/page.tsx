@@ -59,10 +59,10 @@ export default function Home() {
       {/* ---------- HERO ---------- */}
       <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
-         <img
+     <img
   alt="Professional recovery truck assisting a vehicle in London"
   className="w-full h-full object-cover"
-  src="/public/hero.webp"
+  src="/hero.webp"
 />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
         </div>
