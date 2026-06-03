@@ -53,71 +53,76 @@ const FEATURES = [
 
 export default function Home() {
   return (
- <main className="bg-surface-muted">
-  <Navbar />
+    <main className="bg-surface-muted">
+      <Navbar />
 
-  {/* ---------- HERO ---------- */}
-  <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
-    <div className="absolute inset-0 -z-10">
-      {/* ✅ Working image URL – isko apni real image se replace kar dena */}
-      <img
-        src="https://picsum.photos/id/104/1920/1080"
-        alt="Professional recovery truck assisting a vehicle in London"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
-    </div>
-
-    <div className="container-page py-16 md:py-24 w-full">
-      <div className="max-w-3xl text-white animate-fadeIn">
-        <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
-          <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-          Available 24/7 across London
-        </span>
-
-        <h1 className="mt-6 text-white">
-          Fast &amp; Reliable Vehicle Recovery Across&nbsp;London
-        </h1>
-
-        <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
-          24/7 vehicle recovery, breakdown assistance, roadside support, and
-          vehicle transportation. Professional help, exactly when you need it.
-        </p>
-
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <a href="tel:+447865459551" className="btn btn-accent urgent-pulse text-base">
-            <span className="material-symbols-outlined">call</span>
-            Call +44 7865 459551
-          </a>
-
-          <a href="/contact" className="btn btn-ghost-white text-base">
-            <span className="material-symbols-outlined">request_quote</span>
-            Get a Free Quote
-          </a>
+      {/* ---------- FIXED HERO SECTION ---------- */}
+      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden bg-primary-dark">
+        {/* Background Image + Gradient - Properly layered */}
+        <div className="absolute inset-0">
+          <img
+            src="https://picsum.photos/id/104/1920/1080"
+            alt="Professional recovery truck assisting a vehicle in London"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
         </div>
 
-        <div className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
-          {[
-            { label: "Avg. response", value: "45 min" },
-            { label: "Recovered", value: "15k+" },
-            { label: "Rating", value: "4.9★" },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">
-                {s.value}
-              </div>
-              <div className="text-xs uppercase tracking-wider text-white/60 mt-1">
-                {s.label}
-              </div>
+        {/* Content - Above the background */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
+          <div className="max-w-3xl text-white">
+            <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              Available 24/7 across London
+            </span>
+
+            <h1 className="mt-6 text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Fast &amp; Reliable Vehicle Recovery Across&nbsp;London
+            </h1>
+
+            <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
+              24/7 vehicle recovery, breakdown assistance, roadside support, and
+              vehicle transportation. Professional help, exactly when you need it.
+            </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href="tel:+447865459551"
+                className="inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-xl font-semibold hover:bg-accent-dark transition"
+              >
+                <span className="material-symbols-outlined">call</span>
+                Call +44 7865 459551
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition"
+              >
+                <span className="material-symbols-outlined">request_quote</span>
+                Get a Free Quote
+              </a>
             </div>
-          ))}
+
+            <div className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
+              {[
+                { label: "Avg. response", value: "45 min" },
+                { label: "Recovered", value: "15k+" },
+                { label: "Rating", value: "4.9★" },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">
+                    {s.value}
+                  </div>
+                  <div className="text-xs uppercase tracking-wider text-white/70 mt-1">
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </header>
 
-
-
+      {/* Services Section - Unchanged */}
       <section id="services" className="section bg-surface-muted">
         <div className="container-page">
           <div className="section-head">
@@ -149,6 +154,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose Us Section - Unchanged */}
       <section id="why-choose-us" className="section bg-primary text-white relative overflow-hidden">
         <div
           aria-hidden
@@ -199,6 +205,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section - Unchanged */}
       <section id="contact" className="section bg-surface-muted">
         <div className="container-page">
           <div className="rounded-3xl bg-white border border-border shadow-[0_30px_60px_-30px_rgba(15,23,42,0.18)] p-6 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -233,6 +240,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA Section - Unchanged */}
       <section className="section bg-gradient-to-br from-primary to-primary-light text-white text-center">
         <div className="container-page max-w-3xl">
           <span className="eyebrow text-accent-light"><span className="w-8 h-px bg-accent-light" /> Stranded right now?</span>
