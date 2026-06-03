@@ -40,11 +40,11 @@ export default function AboutPage() {
 
       {/* ---------- HERO ---------- */}
       <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden">
-     <div className="absolute inset-0 -z-10">
+  <div className="absolute inset-0 -z-10">
   <img
     className="w-full h-full object-cover"
     alt="A professional heavy-duty recovery truck on a clean urban street in London at dusk."
-    src="/about.png"
+    src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/about.png"
   />
   <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
 </div>
