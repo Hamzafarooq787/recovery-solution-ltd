@@ -62,7 +62,7 @@ export default function Home() {
          <img
   alt="Professional recovery truck assisting a vehicle in London"
   className="w-full h-full object-cover"
-  src="/hero.webp"
+  src="/public/hero.webp"
 />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
         </div>
