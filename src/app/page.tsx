@@ -57,35 +57,46 @@ export default function Home() {
       <Navbar />
 
       {/* ---------- HERO ---------- */}
-      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden hero-surface">
+        {/* Background Image + scrim - solid-fallback gradient for older devices */}
+        <div className="absolute inset-0">
           <img
+            src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/hero.webp"
             alt="Professional recovery truck assisting a vehicle in London"
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGVLkGCcceNsz72dRWtwRTrONJv2Z_KZjnUcd733Y1fQOZrxsAuq7aF8juTd7x17RT8bivjt4ge88z-kXx5JorIuIfNHJyQGf1q_RnAqCotRHdgCTBcM7SnozLMfaphfqKY_bsjV4uPEc2rMdnDvm5cNrFMFLBqnt_C2wmMGmN5E8i67IgN-gxm1gMmVqho8X-6cK8lRCtXJj1vccXaDSTwmR6Cj0t8DtYSLwkRpEcklipHG2DrycMenIVZRS8aBwyb7EGOrwVmhIJ"
+            className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 hero-scrim" />
         </div>
 
-        <div className="container-page py-16 md:py-24 w-full">
-          <div className="max-w-3xl text-white animate-fadeIn">
+        {/* Content - Above the background */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
+          <div className="max-w-3xl text-white">
             <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
               Available 24/7 across London
             </span>
-            <h1 className="mt-6 text-white">
+
+            <h1 className="mt-6 text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Fast &amp; Reliable Vehicle Recovery Across&nbsp;London
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
+
+            <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
               24/7 vehicle recovery, breakdown assistance, roadside support, and
               vehicle transportation. Professional help, exactly when you need it.
             </p>
+
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="tel:+447865459551" className="btn btn-accent urgent-pulse text-base">
+              <a
+                href="tel:+447865459551"
+                className="inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-xl font-semibold hover:bg-accent-dark transition"
+              >
                 <span className="material-symbols-outlined">call</span>
                 Call +44 7865 459551
               </a>
-              <a href="/contact" className="btn btn-ghost-white text-base">
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition"
+              >
                 <span className="material-symbols-outlined">request_quote</span>
                 Get a Free Quote
               </a>
@@ -98,8 +109,12 @@ export default function Home() {
                 { label: "Rating", value: "4.9★" },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">{s.value}</div>
-                  <div className="text-xs uppercase tracking-wider text-white/60 mt-1">{s.label}</div>
+                  <div className="font-display font-bold text-2xl md:text-3xl text-accent-light">
+                    {s.value}
+                  </div>
+                  <div className="text-xs uppercase tracking-wider text-white/70 mt-1">
+                    {s.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -107,7 +122,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* ---------- SERVICES ---------- */}
+      {/* Services Section - Unchanged */}
       <section id="services" className="section bg-surface-muted">
         <div className="container-page">
           <div className="section-head">
@@ -139,7 +154,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- WHY CHOOSE US ---------- */}
+      {/* Why Choose Us Section - Unchanged */}
       <section id="why-choose-us" className="section bg-primary text-white relative overflow-hidden">
         <div
           aria-hidden
@@ -190,7 +205,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- SERVICE AREAS ---------- */}
+      {/* Contact Section - Unchanged */}
       <section id="contact" className="section bg-surface-muted">
         <div className="container-page">
           <div className="rounded-3xl bg-white border border-border shadow-[0_30px_60px_-30px_rgba(15,23,42,0.18)] p-6 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

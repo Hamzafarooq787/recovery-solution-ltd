@@ -39,12 +39,13 @@ export default function AboutPage() {
       <Navbar />
 
       {/* ---------- HERO ---------- */}
-      <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+      <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden hero-surface">
+        {/* Background Image + scrim - solid-fallback gradient for older devices */}
+        <div className="absolute inset-0">
           <img
-            className="w-full h-full object-cover"
-            alt="A professional heavy-duty recovery truck on a clean urban street in London at dusk."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBpN60D-ArxyNWF3FSeCFDM85XG9Zlti1i2Jtfg6hAWpJtzV4ojY5UGOhSiOY0bOGJZJ1vQOIKB6GXs9b_UV3vidLr-nUrNoTTRdevO73VNNqLGBjRzhtzj0YfUv8z6XxSvKRmrvSMkWknHvbj8fBgj8op2-5EYSJ_a9SaTosuAVmFpegt62uIl0ELjMP8IEKgR8RrtbZIVqp4MUFIy59lnOJkw824yBRjK7AGcxspgNDkZBa2GWaa-pMxjwpFxsAg1bf7MTPcuMN"
+            src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/about.png"
+            alt="Professional recovery truck assisting a vehicle in London"
+            className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 hero-scrim" />
         </div>
