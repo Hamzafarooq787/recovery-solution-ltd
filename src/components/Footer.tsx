@@ -120,7 +120,19 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
           <p>© {new Date().getFullYear()} Recovery Solution Ltd. All rights reserved.</p>
-          <p>Registered in England &amp; Wales.</p>
+          <p className="flex items-center gap-1">
+            Designed with{" "}
+            <span aria-label="love" className="text-red-400">♥</span>
+            {" "}by{" "}
+            <a
+              href="https://linkedo.co.uk/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="text-white/80 hover:text-accent transition-colors underline underline-offset-2"
+            >
+              Linkedo
+            </a>
+          </p>
         </div>
       </div>
     </footer>
