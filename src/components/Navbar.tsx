@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
@@ -49,12 +50,14 @@ export default function Navbar() {
           className="flex items-center gap-2 group"
           aria-label="Recovery Solution Ltd home"
         >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-white shadow-md group-hover:bg-primary-dark transition-colors">
-            <span className="material-symbols-outlined text-[22px]">local_shipping</span>
-          </span>
-          <span className="font-display font-bold text-lg md:text-xl text-primary leading-tight">
-            Recovery <span className="text-accent-dark">Solution</span>
-          </span>
+          <Image
+            src="/logo.webp"
+            alt="Recovery Solution Ltd"
+            width={160}
+            height={48}
+            className="h-10 md:h-12 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}

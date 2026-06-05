@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const SERVICE_LINKS = [
   { label: "Emergency Recovery", href: "/services#emergency" },
@@ -21,13 +22,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="inline-flex items-center gap-2 group">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-accent text-primary shadow-md">
-                <span className="material-symbols-outlined text-[22px]">local_shipping</span>
-              </span>
-              <span className="font-display font-bold text-lg text-white">
-                Recovery Solution
-              </span>
+            <Link href="/" aria-label="Recovery Solution Ltd home">
+              <Image
+                src="/logo.webp"
+                alt="Recovery Solution Ltd"
+                width={160}
+                height={48}
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-white/70">
               Your premier partner for 24/7 vehicle recovery and roadside logistics across London.
