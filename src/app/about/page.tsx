@@ -39,16 +39,16 @@ export default function AboutPage() {
       <Navbar />
 
       {/* ---------- HERO ---------- */}
-      <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden">
-      {/* Background Image + Gradient - Properly layered */}
-<div className="absolute inset-0">
-  <img
-    src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/about.png"
-    alt="Professional recovery truck assisting a vehicle in London"
-    className="h-full w-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
-</div>
+      <section className="relative pt-20 md:pt-24 min-h-[70vh] flex items-center overflow-hidden hero-surface">
+        {/* Background Image + scrim - solid-fallback gradient for older devices */}
+        <div className="absolute inset-0">
+          <img
+            src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/about.png"
+            alt="Professional recovery truck assisting a vehicle in London"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 hero-scrim" />
+        </div>
 
         <div className="container-page py-16 md:py-20 w-full">
           <div className="max-w-2xl text-white animate-fadeIn">
@@ -156,7 +156,7 @@ export default function AboutPage() {
             ))}
 
             {/* Highlight card spanning 2 cols on lg */}
-            <article className="card lg:col-span-2 p-7 md:p-8 bg-gradient-to-br from-accent to-accent-dark text-primary border-0 flex flex-col md:flex-row items-center gap-6">
+            <article className="card lg:col-span-2 p-7 md:p-8 accent-surface text-primary border-0 flex flex-col md:flex-row items-center gap-6">
               <div className="flex-1">
                 <h3 className="text-primary text-xl md:text-2xl">Customer-Focused Approach</h3>
                 <p className="mt-3 text-primary/85 leading-relaxed">
@@ -195,7 +195,7 @@ export default function AboutPage() {
             ].map((card) => (
               <div key={card.title} className="relative group rounded-2xl overflow-hidden aspect-[16/10] shadow-md">
                 <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt={card.alt} src={card.src} />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/40 to-transparent" />
+                <div className="absolute inset-0 scrim-bottom" />
                 <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
                   <h3 className="text-white text-xl md:text-2xl">{card.title}</h3>
                 </div>

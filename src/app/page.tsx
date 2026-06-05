@@ -56,17 +56,17 @@ export default function Home() {
     <main className="bg-surface-muted">
       <Navbar />
 
-      {/* ---------- FIXED HERO SECTION ---------- */}
-      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden bg-primary-dark">
-     {/* Background Image + Gradient - Properly layered */}
-<div className="absolute inset-0">
-  <img
-    src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/hero.webp"
-    alt="Professional recovery truck assisting a vehicle in London"
-    className="h-full w-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
-</div>
+      {/* ---------- HERO ---------- */}
+      <header className="relative pt-20 md:pt-24 min-h-[88vh] flex items-center overflow-hidden hero-surface">
+        {/* Background Image + scrim - solid-fallback gradient for older devices */}
+        <div className="absolute inset-0">
+          <img
+            src="https://raw.githubusercontent.com/Hamzafarooq787/recovery-solution-ltd/main/public/hero.webp"
+            alt="Professional recovery truck assisting a vehicle in London"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 hero-scrim" />
+        </div>
 
         {/* Content - Above the background */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
@@ -240,8 +240,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section - Unchanged */}
-      <section className="section bg-gradient-to-br from-primary to-primary-light text-white text-center">
+      {/* ---------- FINAL CTA ---------- */}
+      <section className="section hero-surface text-white text-center">
         <div className="container-page max-w-3xl">
           <span className="eyebrow text-accent-light"><span className="w-8 h-px bg-accent-light" /> Stranded right now?</span>
           <h2 className="mt-3 text-white">Need Immediate Recovery Assistance?</h2>
