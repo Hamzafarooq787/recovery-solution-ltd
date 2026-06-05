@@ -22,7 +22,7 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* ---------- HERO ---------- */}
-      <section className="relative pt-28 md:pt-36 pb-16 md:pb-20 overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
+      <section className="relative pt-28 md:pt-36 pb-16 md:pb-20 overflow-hidden hero-surface text-white">
         <div
           aria-hidden
           className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] [background-size:24px_24px]"
@@ -193,7 +193,7 @@ export default function ServicesPage() {
             <div className="relative h-2 bg-surface-alt rounded-full overflow-hidden">
               <div
                 ref={progressBarRef}
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-accent to-accent-dark transition-all duration-1000 ease-out"
+                className="absolute top-0 left-0 h-full bar-accent transition-all duration-1000 ease-out"
                 style={{ width: "66%" }}
               />
             </div>

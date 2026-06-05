@@ -64,7 +64,7 @@ export default function Home() {
             className="w-full h-full object-cover"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGVLkGCcceNsz72dRWtwRTrONJv2Z_KZjnUcd733Y1fQOZrxsAuq7aF8juTd7x17RT8bivjt4ge88z-kXx5JorIuIfNHJyQGf1q_RnAqCotRHdgCTBcM7SnozLMfaphfqKY_bsjV4uPEc2rMdnDvm5cNrFMFLBqnt_C2wmMGmN5E8i67IgN-gxm1gMmVqho8X-6cK8lRCtXJj1vccXaDSTwmR6Cj0t8DtYSLwkRpEcklipHG2DrycMenIVZRS8aBwyb7EGOrwVmhIJ"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
+          <div className="absolute inset-0 hero-scrim" />
         </div>
 
         <div className="container-page py-16 md:py-24 w-full">
@@ -226,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* ---------- FINAL CTA ---------- */}
-      <section className="section bg-gradient-to-br from-primary to-primary-light text-white text-center">
+      <section className="section hero-surface text-white text-center">
         <div className="container-page max-w-3xl">
           <span className="eyebrow text-accent-light"><span className="w-8 h-px bg-accent-light" /> Stranded right now?</span>
           <h2 className="mt-3 text-white">Need Immediate Recovery Assistance?</h2>

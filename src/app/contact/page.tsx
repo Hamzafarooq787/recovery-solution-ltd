@@ -14,7 +14,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* ---------- HERO ---------- */}
-      <section className="relative pt-28 md:pt-36 pb-16 md:pb-20 overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
+      <section className="relative pt-28 md:pt-36 pb-16 md:pb-20 overflow-hidden hero-surface text-white">
         <div
           aria-hidden
           className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] [background-size:24px_24px]"
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 alt="Map indicating service coverage in South London"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuChlRSQVz0tMjuT1bxkVQAd1yuIRqLDSyFkpo7ULzkNxnHGPSc6lQvF5QQUewFsJBcDUlKDes0ddiMNx2juVXBtkvV5IjY3m6lrYnRzhoAajAzZ41Kt8V8uMEXsPhhEIvb4mpf8SSjAXf7tJSoRZ36P2Tb0GZim8i_wk7l9RVa_620lrzg3qaTptT8xFlyGWzC-Mwqkc8rxAIZ0rlXARHVxmmdR73nnlXE_kRRIc8GTN09zSa5_Fw5nSk68NjZZmL_lZZUjmFmUWjBI"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 scrim-bottom-soft pointer-events-none" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-white">
                 <span className="material-symbols-outlined text-accent-light">place</span>
                 <span className="font-semibold">Serving SW16 &amp; Greater London</span>

@@ -46,7 +46,7 @@ export default function AboutPage() {
             alt="A professional heavy-duty recovery truck on a clean urban street in London at dusk."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBpN60D-ArxyNWF3FSeCFDM85XG9Zlti1i2Jtfg6hAWpJtzV4ojY5UGOhSiOY0bOGJZJ1vQOIKB6GXs9b_UV3vidLr-nUrNoTTRdevO73VNNqLGBjRzhtzj0YfUv8z6XxSvKRmrvSMkWknHvbj8fBgj8op2-5EYSJ_a9SaTosuAVmFpegt62uIl0ELjMP8IEKgR8RrtbZIVqp4MUFIy59lnOJkw824yBRjK7AGcxspgNDkZBa2GWaa-pMxjwpFxsAg1bf7MTPcuMN"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/80 to-primary-dark/40" />
+          <div className="absolute inset-0 hero-scrim" />
         </div>
 
         <div className="container-page py-16 md:py-20 w-full">
@@ -155,7 +155,7 @@ export default function AboutPage() {
             ))}
 
             {/* Highlight card spanning 2 cols on lg */}
-            <article className="card lg:col-span-2 p-7 md:p-8 bg-gradient-to-br from-accent to-accent-dark text-primary border-0 flex flex-col md:flex-row items-center gap-6">
+            <article className="card lg:col-span-2 p-7 md:p-8 accent-surface text-primary border-0 flex flex-col md:flex-row items-center gap-6">
               <div className="flex-1">
                 <h3 className="text-primary text-xl md:text-2xl">Customer-Focused Approach</h3>
                 <p className="mt-3 text-primary/85 leading-relaxed">
@@ -194,7 +194,7 @@ export default function AboutPage() {
             ].map((card) => (
               <div key={card.title} className="relative group rounded-2xl overflow-hidden aspect-[16/10] shadow-md">
                 <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt={card.alt} src={card.src} />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/40 to-transparent" />
+                <div className="absolute inset-0 scrim-bottom" />
                 <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
                   <h3 className="text-white text-xl md:text-2xl">{card.title}</h3>
                 </div>
