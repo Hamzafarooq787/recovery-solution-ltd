@@ -17,7 +17,7 @@ export default function FloatingActions() {
         className="group relative inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full text-white shadow-[0_10px_30px_-8px_rgba(37,211,102,0.55)] hover:scale-110 active:scale-95 transition-transform"
         style={{ backgroundColor: "#25D366" }}
       >
-        <span className="absolute inset-0 rounded-full animate-ping opacity-40" style={{ backgroundColor: "#25D366" }} />
+        <span aria-hidden className="pointer-events-none absolute inset-0 rounded-full animate-ping opacity-40" style={{ backgroundColor: "#25D366" }} />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
@@ -37,7 +37,7 @@ export default function FloatingActions() {
         aria-label="Call us"
         className="group relative inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent text-primary shadow-[0_10px_30px_-8px_rgba(245,158,11,0.6)] hover:bg-accent-dark hover:text-white hover:scale-110 active:scale-95 transition-all"
       >
-        <span className="absolute inset-0 rounded-full bg-accent animate-ping opacity-30" />
+        <span aria-hidden className="pointer-events-none absolute inset-0 rounded-full bg-accent animate-ping opacity-30" />
         <span className="material-symbols-outlined relative text-[28px] sm:text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>
           call
         </span>
