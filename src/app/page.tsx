@@ -69,7 +69,7 @@ export default function Home() {
         </div>
 
         {/* Content - Above the background */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
+        <div className="relative z-10 container-page py-16 md:py-24 w-full">
           <div className="max-w-3xl text-white">
             <span className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 text-accent-light px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
